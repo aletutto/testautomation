@@ -80,7 +80,7 @@ public class CalculatorTest {
     AndroidElement errorTextInResultPreview = (AndroidElement) androidDriver.findElementById("result_preview");
     wait.until(ExpectedConditions.visibilityOf(errorTextInResultPreview));
 
-    Assert.assertEquals("Can't divide by 0", errorTextInResultPreview.getText());
+    Assert.assertEquals("Kein Teilen durch 0", errorTextInResultPreview.getText());
   }
 
   @Test
